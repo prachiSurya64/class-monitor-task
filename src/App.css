@@ -1,0 +1,208 @@
+/*
+ #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/* ------------ */
+/* .table-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table th {
+  background-color: #f4f6f9;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+}
+
+.custom-table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.custom-table tr.even {
+  background-color: #ffffff;
+}
+
+.custom-table tr.odd {
+  background-color: #f9f9f9;
+}
+
+.custom-table tr:hover {
+  background-color: #eaf3ff;
+  transition: background 0.2s ease-in-out;
+} */
+
+
+ #root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.page {
+  min-height: 100%;
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 1400px; /* optional cap so it doesn’t stretch too wide on ultra screens */
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  overflow: hidden; /* keeps rounded corners for header */
+}
+
+/* Wrapper prevents bottom scrollbar by letting content wrap */
+.table-wrap {
+  width: 100%;
+  overflow-x: hidden;  /* avoid horizontal scrollbars */
+}
+
+/* Core table styling */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* enables % widths to be respected; prevents overflow */
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+/* Header */
+.custom-table thead th {
+  position: sticky; /* nice UX if table grows */
+  top: 0;
+  z-index: 1;
+  background: #f5f7fb;
+  color: #334155;
+  text-align: left;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  border-right: 1px solid #e9edf3;
+}
+.custom-table thead th:last-child { border-right: none; }
+
+/* Cells */
+.custom-table td {
+  padding: 10px 12px;
+  color: #1f2937;
+  border-bottom: 1px solid #eef2f7;
+  border-right: 1px solid #f0f3f7;
+  word-break: break-word;      /* wrap long tokens */
+  overflow-wrap: anywhere;     /* force wrap to prevent scroll */
+  white-space: normal;         /* allow multi-line; prevents horizontal scroll */
+}
+.custom-table td:last-child { border-right: none; }
+
+/* Row visuals */
+.custom-table tr.even { background: #ffffff; }
+.custom-table tr.odd  { background: #fafbff; }
+.custom-table tbody tr:hover { background: #eff6ff; transition: background 120ms ease-in-out; }
+
+/* Badges for status */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.badge--green { background: #ecfdf5; color: #065f46; border-color: #a7f3d0; }
+.badge--gray  { background: #f3f4f6; color: #374151; border-color: #e5e7eb; }
+
+
+.table-container {
+  width: 100%;
+  overflow-x: hidden; /* no horizontal scroll */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* respect % widths */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+
+  /* prevent breaking into vertical text */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+thead {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
